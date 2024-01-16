@@ -6,12 +6,14 @@ import { SobreMi } from "../components/sobreMi/SobreMi";
  
 export const HomePage=()=>{ 
     return(
-        <div className="items-center h-screen my-auto">
+        <div className="my-auto min-h-screen flex flex-col items-center justify-center text-center">
+            {/* <div className="h-[30%]">
             <SimpleSlider/>
-            <h1 className="text-center">BIENVENIDOS A MI PORTAFOLIO FULLSTACK DEVELOPER</h1>
-            <h1 className="text-center">SOBRE MI</h1>
-            <h2></h2>
-            <label htmlFor=""><SiTailwindcss/></label>
+            </div> */}
+            <div className="h-[70%]">
+            <h1 className="text-center font-vt3 text-[40px]">BIENVENIDOS A MI PORTAFOLIO FULLSTACK DEVELOPER</h1>
+            <h1 className="text-center font-vt3 text-[40px]">SOBRE MI</h1>
+            </div>
         </div>
     )
 }

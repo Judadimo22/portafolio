@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import avatar from '../../assets/avatar.png'
 
 
 export const NavBar = () => {
@@ -11,55 +12,56 @@ export const NavBar = () => {
     const [colorContacto, setColorContacto] = useState("");
     useEffect(() => {
         if (location.pathname === "/") {
-          setColorHome("text-black");
+          setColorHome("text-white");
           setColorSobreMi("text-black");
           setColorProyectos("text-black");
           setColorSkills("text-black");
           setColorContacto("text-black");
         } else if (location.pathname === "/sobreMi") {
             setColorHome("text-black");
-            setColorSobreMi("text-blue-500");
+            setColorSobreMi("text-white");
             setColorProyectos("text-black");
             setColorSkills("text-black");
             setColorContacto("text-black");
         } else if (location.pathname === "/proyectos") {
             setColorHome("text-black");
             setColorSobreMi("text-black");
-            setColorProyectos("text-blue-500");
+            setColorProyectos("text-white");
             setColorSkills("text-black");
             setColorContacto("text-black");
         } else if (location.pathname === "/skills") {
             setColorHome("text-black");
             setColorSobreMi("text-black");
             setColorProyectos("text-black");
-            setColorSkills("text-blue-500");
+            setColorSkills("text-white");
             setColorContacto("text-black");
         } else if (location.pathname === "/contacto") {
             setColorHome("text-black");
             setColorSobreMi("text-black");
             setColorProyectos("text-black");
             setColorSkills("text-black");
-            setColorContacto("text-blue-500");
+            setColorContacto("text-white");
         }
       }, [location.pathname]);
 
     return (
-        <div className="text-center bg-slate-400 h-screen my-auto items-center flex flex-col bg-yellow-300">
-            <div className="bg-red-200 items-center">
+        <div className="min-h-screen flex flex-col items-center justify-center text-center font-vt3 text-[20px]">
+            <img className="h-[150px]" src={avatar} alt="" />
+            <div className="">
             <Link to="/">
-            <h1 className={`${colorHome}`}>Home</h1>
+            <h1 className={`${colorHome} my-[40px]`}>Home</h1>
             </Link>
             <Link to="/sobreMi">
-            <h1 className={`${colorSobreMi}`}>Sobre mi</h1>
+            <h1 className={`${colorSobreMi} my-[40px] `}>Sobre mi</h1>
             </Link>
             <Link to="/proyectos">
-            <h1 className={`${colorProyectos}`}>Proyectos</h1>
+            <h1 className={`${colorProyectos} my-[40px]`}>Proyectos</h1>
             </Link>
             <Link to="/skills">
-            <h1 className={`${colorSkills}`}>Skills</h1>
+            <h1 className={`${colorSkills} my-[40px]`}>Skills</h1>
             </Link>
             <Link to="/contacto">
-            <h1 className={`${colorContacto}`}>Contacto</h1>
+            <h1 className={`${colorContacto} my-[40px]`}>Contacto</h1>
             </Link>
             </div>
         </div>

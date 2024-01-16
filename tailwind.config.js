@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        'fondo-imagen': "url('/src/assets/imagenFondo.jpg')",
+      }),
+    },
+    fontFamily: {
+      vt3: ['vt323', 'sant-serif']
+    }
   },
   plugins: [],
 }

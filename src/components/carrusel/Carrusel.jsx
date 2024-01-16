@@ -16,8 +16,7 @@ export default class SimpleSlider extends Component {
       autoplaySpeed: 7000,
     };
     return (
-      <div className="justify-center text-center mb-[50px] mx-[20%] items-center">
-        <h2> Single Item</h2>
+      <div className="justify-center text-center mx-[10%] items-center text-black">
         <Slider {...settings}>
           <div>
             <h3>1</h3>

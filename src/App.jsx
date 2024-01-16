@@ -12,11 +12,11 @@ import { NavBar } from "./components/navBar/navBar";
 
 function App() {
   return (
-      <div className="flex h-full items-center ">
-        <div className="w-[25%] bg-green-400 items-center">
+      <div className="flex">
+        <div className="w-[20%] bg-[#2CA4A4] items-center">
         <NavBar/>
         </div>
-        <div className="w-[75%] h-full">
+        <div className="w-[80%] min-h-screen bg-fondo-imagen bg-cover text-white ">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/sobreMi" element={<SobreMi />} />

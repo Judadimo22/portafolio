@@ -9,6 +9,7 @@ import { SobreMi } from "./components/sobreMi/SobreMi";
 import SimpleSlider from "./components/carrusel/Carrusel";
 import { Proyectos } from "./components/proyectos/Proyectos";
 import { NavBar } from "./components/navBar/navBar";
+import { Skills } from "./components/Skills/Skills";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/sobreMi" element={<SobreMi />} />
           <Route path="/proyectos" element={<Proyectos />} />
-          <Route path="/section3" element={<Proyectos />} />
+          <Route path="/skills" element={<Skills />} />
         </Routes>
         </div>
       </div>
